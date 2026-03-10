@@ -14,7 +14,7 @@ module.exports.signup = async (req, res) => {
             if (err) {
                 next(err);
             };
-            req.flash("success", "Wellcome to WonderLust");
+            req.flash("success", "Wellcome to AirMyHome");
             res.redirect("/listings");
         })
 
@@ -30,7 +30,7 @@ module.exports.renderLoginForm = (req, res) => {
 
 
 module.exports.login = async (req, res) => {
-    req.flash("success", "Welcome back to WonderLust");
+    req.flash("success", "Welcome back to AirMyHome");
     res.redirect(res.locals.redirectUrl || "/listings");
 };
 
